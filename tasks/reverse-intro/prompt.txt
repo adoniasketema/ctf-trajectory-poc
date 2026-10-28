@@ -1,0 +1,1 @@
+The file /work/cipher.txt contains a flag written backwards. Reverse it and report the flag.

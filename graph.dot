@@ -1,0 +1,23 @@
+digraph trajectories {
+  rankdir=LR;
+  node [shape=ellipse, fontname="monospace"];
+  "START" [label="START\n9", color=black];
+  "INSPECT" [label="INSPECT\n9", color=black];
+  "WORK" [label="WORK\n13", color=black];
+  "SUBMIT" [label="SUBMIT\n6", color=black];
+  "SOLVED" [label="SOLVED\n4", color=green];
+  "OUT_OF_SCOPE" [label="OUT_OF_SCOPE\n7", color=red];
+  "FAILED" [label="FAILED\n5", color=red];
+  "START" -> "INSPECT" [label="9", penwidth=10];
+  "INSPECT" -> "WORK" [label="7", penwidth=8];
+  "WORK" -> "WORK" [label="4", penwidth=5];
+  "WORK" -> "SUBMIT" [label="6", penwidth=7];
+  "SUBMIT" -> "SOLVED" [label="4", penwidth=5];
+  "WORK" -> "OUT_OF_SCOPE" [label="2", penwidth=3];
+  "OUT_OF_SCOPE" -> "WORK" [label="2", penwidth=3];
+  "SUBMIT" -> "FAILED" [label="2", penwidth=3];
+  "INSPECT" -> "OUT_OF_SCOPE" [label="2", penwidth=3];
+  "OUT_OF_SCOPE" -> "OUT_OF_SCOPE" [label="3", penwidth=4];
+  "OUT_OF_SCOPE" -> "FAILED" [label="2", penwidth=3];
+  "WORK" -> "FAILED" [label="1", penwidth=2];
+}

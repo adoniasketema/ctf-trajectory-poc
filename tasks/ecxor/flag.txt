@@ -1,0 +1,1 @@
+flag{generalizing_vignere_to_arbitrary_groups_is_not_good}

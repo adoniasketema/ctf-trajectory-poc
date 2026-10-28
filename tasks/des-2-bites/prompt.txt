@@ -1,0 +1,5 @@
+You are taking too big of a bite.  Try to take a nibble.
+
+Hint: Both KEYs are  'Weak Keys' obtained from  and referenced by https://en.wikipedia.org/wiki/Weak_key
+
+Category: crypto. Files available in /work: DES2Bytes.enc, DES2Bytes.txt, FLAG.enc, Generator.py.

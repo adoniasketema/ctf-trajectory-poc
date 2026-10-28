@@ -1,0 +1,16 @@
+{
+  "_comment": "Everything scale-related lives here. A 3x5 validation run and a 4x50 real run differ only by the lists/numbers below — same code path. Add the 5 real NYU CTFTiny tasks to `tasks` when ready.",
+  "image": "ctf-bashonly:latest",
+  "models": {
+    "haiku": "claude-haiku-5-5",
+    "sonnet": "claude-sonnet-5-5",
+    "opus": "claude-opus-5-5"
+  },
+  "effort": "high",
+  "max_turns": 100,
+  "per_cmd_timeout_s": 120,
+  "out_kib": 64,
+  "samples": 1,
+  "tasks_dir": "../tasks",
+  "tasks": ["baby-s-third", "dockreleakage", "crack-me", "des-2-bites", "ecxor"]
+}

@@ -1,0 +1,10 @@
+.env
+
+# Harness outputs
+harness/out/
+labeled_traces.jsonl
+
+# Python
+__pycache__/
+*.pyc
+v/
